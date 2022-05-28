@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --light-cyan: hsl(179, 62%, 50%);
+    --gray: hsl(204, 43%, 33%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background: #FFF;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a a" "b c";
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 2rem 1rem;
+    box-shadow: 0px 0px 16px #AAA;
+}
+
+.box {
+    padding: 40px;
+}
+
+.join {
+    grid-column: 1 / 3;
+    grid-area: a;
+}
+
+.join > h1 {
+    color: var(--cyan);
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.join > h3 {
+    color: var(--bright-yellow);
+    padding-bottom: 15px;
+}
+
+.join > p {
+    color: var(--grayish-blue);
+    padding-bottom: 5px;
+}
+
+.price {
+    background-color: var(--cyan);
+    grid-area: b;
+}
+
+h3 {
+    color: #FFF;
+    padding-bottom: 15px;
+    font-style: 20px;
+}
+
+h5 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+h5 span.price{
+    color: #FFF;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.per {
+    color: var(--light-gray);
+    font-weight: 400;
+}
+
+.price p {
+    color: #FFF;
+    font-size: 14px;
+}
+
+.price a {
+    display: block;
+    width: 90%;
+    background-color: var(--bright-yellow);
+    text-align: center;
+    color: #FFF;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 14px 0px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.why {
+    background-color: var(--light-cyan);
+    grid-area: c;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: var(--light-gray);
+    list-style-type: none;
+    padding-bottom: 3px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 425px) {
+    .wrapper {
+        grid-template-columns: 100%;
+        grid-template-areas: "a" "b" "c";
+    }
+}
