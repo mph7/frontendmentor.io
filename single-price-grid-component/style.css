@@ -54,7 +54,7 @@ body {
     padding-bottom: 20px;
 }
 
-.join > h3 {
+.join > h2 {
     color: var(--bright-yellow);
     padding-bottom: 15px;
 }
@@ -75,13 +75,13 @@ h3 {
     font-style: 20px;
 }
 
-h5 {
+h4 {
     display: flex;
     align-items: center;
     padding-bottom: 10px;
 }
 
-h5 span.price{
+h4 span.price{
     color: #FFF;
     font-size: 30px;
     padding-right: 10px;
